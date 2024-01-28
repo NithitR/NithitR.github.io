@@ -161,7 +161,10 @@ ul li, ol li {
   z-index: 1;
   border-radius: 4px;
 }
+.check-me-in{
+  background-color: #6e7b67;
 
+}
 .btn-common:hover {
   color: #fff;
   box-shadow: 0 6px 22px rgba(0, 0, 0, 0.1);
