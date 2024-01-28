@@ -622,7 +622,7 @@ a.back-to-top:hover, a.back-to-top:focus {
    Countdown Style Start
    ========================================================================== */
 .bg-wraper {
-  position: fixed;
+  /*position: fixed;*/
   top: 0;
   height: 100%;
   min-height: 700px;
@@ -636,7 +636,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   top: 5%;
   text-align: center;
   width: 100%;
-  background: rgba(0,0,0,0.5);
+  /*background: rgba(0,0,0,0.5);*/
   padding-top: 5%;
 
 }
@@ -1297,20 +1297,27 @@ a.back-to-top:hover, a.back-to-top:focus {
   color: #E91E63;
 }
 
-.gallery{
-position: absolute;
-  padding-top: 5%;
-  margin-top: 160%;
-  color: white;
+.program{
+/*position: absolute;*/
+/*  padding-top: 5%;*/
+  margin-top: 20px;
 }
+.gallery{
+  margin-top: 20px;
 
+}
 .maps{
-position: absolute;
-  margin-top: 280%;
-  background: rgba(0,0,0,0.5);
-  color: #fff;
+/*position: absolute;*/
+  margin-top: 20px;
+/*  background: rgba(0,0,0,0.5);*/
   top: 5%;
   text-align: center;
   padding-top: 5%;
   width: 100%;
+}
+.detail{
+  text-align:left;
+}
+.container-gallery{
+  margin: 10px
 }
