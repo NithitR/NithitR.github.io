@@ -1,9 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Courier%20Prime&display=swap");
+/*@import url("https://fonts.googleapis.com/css?family=Courier%20Prime&display=swap");*/
+@font-face {
+  font-family: Courier;
+  src: url("../fonts/COURBD.ttf");
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Courier Prime", sans-serif;
+  font-family: "Courier", sans-serif;
 }
 
 .centered {
