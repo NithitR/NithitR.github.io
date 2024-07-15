@@ -1,13 +1,9 @@
-/*@import url("https://fonts.googleapis.com/css?family=Courier%20Prime&display=swap");*/
-@font-face {
-  font-family: Courier;
-  src: url("../fonts/COURBD.ttf");
-}
+@import url("https://fonts.googleapis.com/css?family=Courier%20Prime&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Courier", sans-serif;
+  font-family: "Courier Prime", sans-serif;
 }
 
 .centered {
@@ -17,6 +13,12 @@
   width: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.textContainer {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 /*section {*/
@@ -156,5 +158,14 @@ section .text-container .text-box h3 {
   text-align: left;
 }
 
+.container-gallery {
+  margin: 10px;
+}
+
+.video {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 
 /*# sourceMappingURL=style.css.map */

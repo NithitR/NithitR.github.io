@@ -11,9 +11,6 @@ function reveal() {
 
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
-            if (!initialise && reveals[i].getElementsByClassName('type-writer').length) {
-                typeWriter();
-            }
         } else {
             reveals[i].classList.remove("active");
         }
@@ -25,6 +22,9 @@ var txt = `Love is in the air, and joy fills our hearts as we welcome cherished 
     Today, we write the first chapter of our forever.
     Welcome to the beginning of a beautiful journey together` ; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
+if(!initialise){
+    typeWriter();
+}
 
 function typeWriter() {
     if (i < txt.length) {

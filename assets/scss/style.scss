@@ -8,11 +8,18 @@
 
 .centered {
     color: rgb(220 209 63);
-    position: absolute;
+    //position: absolute;
+    position: relative;
+    z-index:1;
     top: 20%;
     width: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
 }
 /*section {*/
 /*    position: relative;*/
@@ -145,4 +152,9 @@ section .text-container .text-box h3 {
 }
 .container-gallery{
     margin: 10px
+}
+.video{
+    height:100%;
+    width:100%;
+    overflow: hidden;
 }
