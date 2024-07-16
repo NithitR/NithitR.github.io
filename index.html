@@ -29,13 +29,6 @@
 </head>
 <body>
 
-<section>
-    <video autoplay muted playsinline loop id="myVideo" class="video">
-        <source src="assets/video/forest.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-</section>
-
 <section class="hero textContainer">
 
         <img class="img-fluid" src="assets/img/hero-non-text.png" alt="">
@@ -93,13 +86,20 @@
 </section>
 
 <section class="gallery">
+
     <div class="container-fluid text-center reveal fade-bottom">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check"
-             viewBox="0 0 16 16">
-            <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
-            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
+            <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
         </svg>
-        <h3>Gallery</h3>
+        <h3>Gallery & Media</h3>
+        <div>
+            <video width="100%"  autoplay muted playsinline loop controls id="video" class="video">
+                <source src="assets/video/forest.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
         <div class="container-gallery"><img class="img-fluid" src="assets/img/03.jpg" alt=""></div>
         <div class="container-gallery"><img class="img-fluid" src="assets/img/04.jpg" alt=""></div>
         <div class="container-gallery"><img class="img-fluid" src="assets/img/05.jpg" alt=""></div>
@@ -111,6 +111,8 @@
         <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
         <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
     </div>
+
+
 </section>
 
 <!--<section>-->

@@ -9,9 +9,9 @@
 .centered {
     color: rgb(220 209 63);
     //position: absolute;
-    position: relative;
+    position: absolute;
     z-index:1;
-    top: 20%;
+    top: 10%;
     width: 80%;
     left: 50%;
     transform: translate(-50%, -50%);

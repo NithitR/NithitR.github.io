@@ -18,9 +18,7 @@ function reveal() {
 }
 
 var i = 0;
-var txt = `Love is in the air, and joy fills our hearts as we welcome cherished guests to witness and celebrate the union of two souls.
-    Today, we write the first chapter of our forever.
-    Welcome to the beginning of a beautiful journey together` ; /* The text */
+var txt = `With joyful hearts, we invite you to celebrate the wedding of Wasunthara and Nithit. Join us as we embark on this beautiful journey together.` ; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 if(!initialise){
     typeWriter();
