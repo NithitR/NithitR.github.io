@@ -3,7 +3,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=390px, initial-scale=1, shrink-to-fit=no">
     <title>Nithit & Wasunthara</title>
     <!-- Bootstrap CSS -->
 
@@ -15,19 +15,32 @@
 
 </head>
 <body>
-
-<section class="hero textContainer">
-
-        <img class="img-fluid" src="assets/img/hero-non-text.png" alt="">
-    <div id="text" class="type-writer centered over"></div>
-    <!--    <h1>Scroll Down to Reveal Elements &#8595;</h1>-->
-    <div class="arrow animated bounce">
-
+<section class="intro">
+    <div class="container-fluid text-center fade-bottom">
+        <div class="video-overlay">
+            <video width="100%" autoplay playsinline loop controls id="video" class="video">
+                <source src="assets/video/intro.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+        <div class="arrow-down">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
     </div>
-<!--    <h1>Animated Scroll down arrow </br>fades away after scrolling started </h1>-->
-<!--    <footer>www.sevenfiv.com</footer>-->
-</section>
 
+</section>
+<section class="hero">
+    <div class="container-fluid text-center reveal fade-bottom">
+        <img id="hero-image" class="img-fluid" src="assets/img/hero.jpg" alt="">
+    </div>
+
+    <!--    <div id="text" class="type-writer centered over"></div>-->
+    <!--    <h1>Scroll Down to Reveal Elements &#8595;</h1>-->
+
+    <!--    <h1>Animated Scroll down arrow </br>fades away after scrolling started </h1>-->
+    <!--    <footer>www.sevenfiv.com</footer>-->
+</section>
 
 
 <section class="program">
@@ -79,37 +92,34 @@
             </svg>
             http://www.magiclovehouse.com/
         </p>
+        <a href="#" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true"
+           onclick="window.open('https://forms.gle/Htbhi3vVA4AE5Bmd9')">ร่วมอวยพรบ่าวสาว</a>
     </div>
 </section>
 
 <section class="gallery">
 
     <div class="container-fluid text-center reveal fade-bottom">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn"
+             viewBox="0 0 16 16">
             <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
         </svg>
         <h3>Gallery & Media</h3>
-        <div>
-            <video width="100%"  autoplay muted playsinline loop controls id="video" class="video">
-                <source src="assets/video/forest.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
 
-        <div class="container-gallery"><img class="img-fluid" src="assets/img/03.jpg" alt=""></div>
-        <div class="container-gallery"><img class="img-fluid" src="assets/img/04.jpg" alt=""></div>
-        <div class="container-gallery"><img class="img-fluid" src="assets/img/05.jpg" alt=""></div>
-        <div class="container-gallery"><img class="img-fluid" src="assets/img/06.jpg" alt=""></div>
-        <div class="container-gallery"><img class="img-fluid" src="assets/img/07.jpg" alt=""></div>
+        <div class="container-gallery"><img class="img-fluid" src="assets/img/03.jpg" alt="" loading="lazy"></div>
+        <div class="container-gallery"><img class="img-fluid" src="assets/img/04.jpg" alt="" loading="lazy"></div>
+        <div class="container-gallery"><img class="img-fluid" src="assets/img/05.jpg" alt="" loading="lazy"></div>
+        <div class="container-gallery"><img class="img-fluid" src="assets/img/06.jpg" alt="" loading="lazy"></div>
+        <div class="container-gallery"><img class="img-fluid" src="assets/img/07.jpg" alt="" loading="lazy"></div>
         <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
         <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
         <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
         <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
         <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
+
+
     </div>
-
-
 </section>
 
 <!--<section>-->
@@ -244,7 +254,18 @@
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>    </section>-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/jquery-min.js"></script>
