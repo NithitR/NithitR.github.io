@@ -4,9 +4,9 @@ $(document).ready(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 1) {
-            $('.arrow-down').addClass('fade');
+            $('.arrow').addClass('fade');
         } else{
-            $('.arrow-down').removeClass('fade');
+            $('.arrow').removeClass('fade');
         }
     })
 });
