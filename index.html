@@ -3,46 +3,31 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Courier Prime' rel='stylesheet'>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title>Nithit & Wasunthara</title>
-
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/line-icons.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
-    <!-- Off Canvas Menu -->
-    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
-    <!-- Color Switcher -->
-    <link rel="stylesheet" type="text/css" href="assets/css/vegas.min.css">
-    <!-- Animate -->
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
-<body >
+<body>
 
-<section>
-    <video autoplay muted loop id="myVideo">
-        <source src="assets/video/forest.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-</section>
+<section class="hero textContainer">
 
-<section class="hero reveal fade-bottom">
-
-    <img class="img-fluid" src="assets/img/hero-non-text.png" alt="">
-    <p id="text" class="type-writer centered"></p>
-
+        <img class="img-fluid" src="assets/img/hero-non-text.png" alt="">
+    <div id="text" class="type-writer centered over"></div>
     <!--    <h1>Scroll Down to Reveal Elements &#8595;</h1>-->
+    <div class="arrow animated bounce">
+
+    </div>
+<!--    <h1>Animated Scroll down arrow </br>fades away after scrolling started </h1>-->
+<!--    <footer>www.sevenfiv.com</footer>-->
 </section>
+
 
 
 <section class="program">
@@ -55,6 +40,10 @@
         <h3>Our Program</h3>
         <img class="img-fluid" src="assets/img/program.png" alt="">
     </div>
+    <i class="fa-solid fa-angles-down"></i>
+    <div id="charging" class="fa"></div>
+
+    <i class="fa-solid fa-volleyball fa-bounce"></i>
 </section>
 
 <section class="maps">
@@ -68,19 +57,24 @@
         <iframe width="100%" height="450" style="border:0" loading="lazy" allowfullscreen
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJtxI9_vu94jARJQa2XFk4bkg&key=AIzaSyC6lB4Fmd-hYnzMVarRuLCPHquHJWUCCJ8"></iframe>
         <p class="detail">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-fill"
+                 viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                      d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.3 1.3 0 0 0-.37.265.3.3 0 0 0-.057.09V14l.002.008.016.033a.6.6 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.6.6 0 0 0 .146-.15l.015-.033L12 14v-.004a.3.3 0 0 0-.057-.09 1.3 1.3 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465s-2.462-.172-3.34-.465c-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411"/>
             </svg>
             Dalva le ville | Wedding Venue
         </p>
         <p class="detail">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                 class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                      d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
             </svg>
             0659238656
         </p>
         <p class="detail">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-browser-safari" viewBox="0 0 16 16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                 class="bi bi-browser-safari" viewBox="0 0 16 16">
                 <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.25-14.75v1.5a.25.25 0 0 1-.5 0v-1.5a.25.25 0 0 1 .5 0m0 12v1.5a.25.25 0 1 1-.5 0v-1.5a.25.25 0 1 1 .5 0M4.5 1.938a.25.25 0 0 1 .342.091l.75 1.3a.25.25 0 0 1-.434.25l-.75-1.3a.25.25 0 0 1 .092-.341m6 10.392a.25.25 0 0 1 .341.092l.75 1.299a.25.25 0 1 1-.432.25l-.75-1.3a.25.25 0 0 1 .091-.34ZM2.28 4.408l1.298.75a.25.25 0 0 1-.25.434l-1.299-.75a.25.25 0 0 1 .25-.434Zm10.392 6 1.299.75a.25.25 0 1 1-.25.434l-1.3-.75a.25.25 0 0 1 .25-.434ZM1 8a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 0 .5h-1.5A.25.25 0 0 1 1 8m12 0a.25.25 0 0 1 .25-.25h1.5a.25.25 0 1 1 0 .5h-1.5A.25.25 0 0 1 13 8M2.03 11.159l1.298-.75a.25.25 0 0 1 .25.432l-1.299.75a.25.25 0 0 1-.25-.432Zm10.392-6 1.299-.75a.25.25 0 1 1 .25.433l-1.3.75a.25.25 0 0 1-.25-.434ZM4.5 14.061a.25.25 0 0 1-.092-.341l.75-1.3a.25.25 0 0 1 .434.25l-.75 1.3a.25.25 0 0 1-.342.091m6-10.392a.25.25 0 0 1-.091-.342l.75-1.299a.25.25 0 1 1 .432.25l-.75 1.3a.25.25 0 0 1-.341.09ZM6.494 1.415l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13M9.86 13.972l.13.483a.25.25 0 1 1-.483.13l-.13-.483a.25.25 0 0 1 .483-.13M3.05 3.05a.25.25 0 0 1 .354 0l.353.354a.25.25 0 0 1-.353.353l-.354-.353a.25.25 0 0 1 0-.354m9.193 9.193a.25.25 0 0 1 .353 0l.354.353a.25.25 0 1 1-.354.354l-.353-.354a.25.25 0 0 1 0-.353M1.545 6.01l.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.482Zm12.557 3.365.483.13a.25.25 0 1 1-.13.483l-.483-.13a.25.25 0 1 1 .13-.483m-12.863.436a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177m12.557-3.365a.25.25 0 0 1 .176-.306l.483-.13a.25.25 0 1 1 .13.483l-.483.13a.25.25 0 0 1-.306-.177M3.045 12.944a.3.3 0 0 1-.029-.376l3.898-5.592a.3.3 0 0 1 .062-.062l5.602-3.884a.278.278 0 0 1 .392.392L9.086 9.024a.3.3 0 0 1-.062.062l-5.592 3.898a.3.3 0 0 1-.382-.034zm3.143 1.817a.25.25 0 0 1-.176-.306l.129-.483a.25.25 0 0 1 .483.13l-.13.483a.25.25 0 0 1-.306.176M9.553 2.204a.25.25 0 0 1-.177-.306l.13-.483a.25.25 0 1 1 .483.13l-.13.483a.25.25 0 0 1-.306.176"/>
             </svg>
             http://www.magiclovehouse.com/
@@ -89,24 +83,33 @@
 </section>
 
 <section class="gallery">
+
     <div class="container-fluid text-center reveal fade-bottom">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check"
-             viewBox="0 0 16 16">
-            <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
-            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
+            <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
         </svg>
-        <h3>Gallery</h3>
+        <h3>Gallery & Media</h3>
+        <div>
+            <video width="100%"  autoplay muted playsinline loop controls id="video" class="video">
+                <source src="assets/video/forest.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
         <div class="container-gallery"><img class="img-fluid" src="assets/img/03.jpg" alt=""></div>
         <div class="container-gallery"><img class="img-fluid" src="assets/img/04.jpg" alt=""></div>
         <div class="container-gallery"><img class="img-fluid" src="assets/img/05.jpg" alt=""></div>
         <div class="container-gallery"><img class="img-fluid" src="assets/img/06.jpg" alt=""></div>
         <div class="container-gallery"><img class="img-fluid" src="assets/img/07.jpg" alt=""></div>
-<!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
-<!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
-<!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
-<!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
-<!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
+        <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
+        <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
+        <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
+        <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
+        <!--        <div class="container-gallery"><img class="img-fluid" src="assets/img/slide3.jpg" alt=""></div>-->
     </div>
+
+
 </section>
 
 <!--<section>-->
@@ -243,16 +246,9 @@
 <!--    </div>    </section>-->
 
 
-
-<script src="assets/js/jquery-min.js"></script>
 <script src="assets/js/popper.min.js"></script>
+<script src="assets/js/jquery-min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/vegas.min.js"></script>
-<script src="assets/js/jquery.countdown.min.js"></script>
-<script src="assets/js/classie.js"></script>
-<script src="assets/js/jquery.nav.js"></script>
-<script src="assets/js/jquery.easing.min.js"></script>
-<script src="assets/js/main.js"></script>
 <script src="assets/js/script.js"></script>
 
 <!--<script type="text/javascript">-->
