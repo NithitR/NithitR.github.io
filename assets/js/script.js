@@ -1,7 +1,6 @@
 
 $(document).ready(function() {
     window.addEventListener("scroll", reveal);
-
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         if (scroll >= 1) {
@@ -10,12 +9,6 @@ $(document).ready(function() {
             $('.arrow-down').removeClass('fade');
         }
     })
-});
-$(function() {
-    $('a[href*=#]').on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-    });
 });
 
 
